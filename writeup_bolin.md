@@ -114,3 +114,10 @@ The following are  the main problems and thinkings I have faced during this proj
 1) sometime the ```polyfit``` can not find lane due to there is no pixels in the interested area. In the real implementation, a keep or delay function should be applied to hold the past lane for a while.    
 2) The shadows on the route show a strong affect on the pixel identification. More ciritera may be introduced to help remove the effect.    
 3) The curvature value should be calculated in the front of vehicle but not the current position if it is used to control the steering wheel due to the time delay. 
+
+### Improvement since last submission
+
+After the first submission， the improvements are done as following:    
+1) add the l chancel from LUV and b chancel from LAB space to enhance the binary result;     
+2) Remove the undist process from the video pipline to speed up the processing;   
+3) Correct the left and right side of vehicle position relative to the lane center;     
